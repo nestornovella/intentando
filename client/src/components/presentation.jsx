@@ -31,16 +31,14 @@ export default function Presentation() {
         })
     }
 
-    const observador = new IntersectionObserver(cargarImagen, {
-   
-        rootMargin: "-30% 0px -70% 0px",
- 
-    })
-
+    
     useEffect(() => {
+        const observador = new IntersectionObserver(cargarImagen, {
+            rootMargin: "-30% 0px -70% 0px",
+        })
         observador.observe(document.getElementById("presentation"))
       
-    }, [])
+    })
     return (
         <div id="Inicio" className={Styles.container}>
             <div className={Styles.text} id="name" >

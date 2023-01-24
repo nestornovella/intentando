@@ -49,16 +49,16 @@ export default function Experience() {
         })
     }
 
-    const observador = new IntersectionObserver(cargarImagen,{
-        root:null,
-        rootMargin:"0px 0px 0px 0px",
-        threshold:0.2
-    })
     
     useEffect(()=>{
+        const observador = new IntersectionObserver(cargarImagen,{
+            root:null,
+            rootMargin:"0px 0px 0px 0px",
+            threshold:0.2
+        })
         observador.observe(document.getElementById("experienseImg"))
       
-    },[])
+    })
 
 
     return (
