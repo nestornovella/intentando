@@ -1,0 +1,97 @@
+
+
+.container{
+   
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 15%;
+}
+.console{
+    margin-top: 50px;
+  width: 400px;  
+  height: 250px;
+  border: solid grey 1px;
+  overflow: hidden;  
+  text-align: start;
+  margin-right: 100px;
+  
+}
+.margen{
+    display: flex;
+    justify-content: space-between;
+
+    width: 400px; 
+    height: 15px;
+    border: solid gray 1px;
+    background-color: rgb(179, 177, 177);
+    border-top: none;
+}
+.margen button{
+    text-align: center;
+    font-size: 8px;
+    width: 15px;
+    height: 14px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    padding-left: 3px;
+    
+}
+.margen :first-child{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.margen :first-child p{
+    color: white;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.margen :first-child img{
+   margin-left: 10px;
+}
+
+.margen :last-child{
+    display: flex;
+
+}
+
+
+.blackboard{
+    background-color: rgba(0, 0, 0, 0.822);
+    height: 100%;
+
+}
+
+.blackboard :first-child p{
+    margin: 0px;
+    font-size: 10px;
+    font-family: monospace;
+    color: white;
+}
+
+.container img{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 1.2s ease-in-out all;
+    transform: translateX(100px);
+}
+
+.container img.visible{
+    opacity: 1;
+    transform: scale(1);
+    transform: translateX(0px);
+}
+
+.comands span{
+    color: yellow;
+}
+.comands span span{
+    color: rgb(65, 212, 32);
+}

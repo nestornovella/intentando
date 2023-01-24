@@ -1,0 +1,37 @@
+.navBar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(40, 40, 82);
+    padding-right: 300px;
+    z-index: 1;
+    height: 50px;
+
+}
+
+.navBar button {
+    list-style: none;
+    border: none;
+    color: white;
+    font-family: sans-serif, cursive;
+    font-weight: 600;
+    background-color: transparent;
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+
+.navBar button:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.downButton button {
+    background: url("../icons/descarga.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    
+}
