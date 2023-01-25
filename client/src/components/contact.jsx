@@ -83,7 +83,9 @@ export default function Contact() {
                 <div className={Styles.formContainer}>
                     <form>
                         <input onChange={inputsHandler} name="name" value={input.name} placeholder="nombre" type="text" />
+                        <br />
                         <input onChange={inputsHandler} name="email" value={input.email} placeholder="email" type="email" />
+                        <br />
                         <input onChange={inputsHandler} name="phone" value={input.phone} placeholder="phone with area code" type="text" />
                         <br />
                         <textarea onChange={inputsHandler} name="message" value={input.message} placeholder="mensaje" id="" cols="40" rows="4"></textarea>
