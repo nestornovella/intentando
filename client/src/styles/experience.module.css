@@ -79,6 +79,7 @@
 .container img{
     opacity: 0;
     transform: scale(0.9);
+    transform: translateX(100px);
     transition: 1.2s ease-in-out all;
     
 }
@@ -123,6 +124,14 @@
         margin: 10%;
         
     }
+    .container img{
+        opacity: 0;
+        transform: scale(0.9);
+        transform: translateX(0px);
+        transition: 1.2s ease-in-out all;
+        
+    }
+    
     .container img.visible{
         opacity: 1;
         transform: translateX(0px);

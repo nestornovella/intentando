@@ -73,7 +73,7 @@
 .contact img.visible{
     opacity: 1;
     transform: scale(1);
-    transform: translateX(0px)
+    transform: translateY(0px)
 }
 
 @media (max-width: 700px) {
@@ -95,7 +95,7 @@
     }
     .contact img.visible{
         opacity: 1;
-        transform: translateX(0px)
+        transform: translateY(0px)
     }
  
  }

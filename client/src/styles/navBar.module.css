@@ -10,6 +10,11 @@
     height: 50px;
 
 }
+.linksContainer{
+    display: flex;
+    width: 100%;
+    transition: 0.7s;
+   }
 
 .navBar button {
     list-style: none;
@@ -75,14 +80,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 200px;
+    margin-top: 280px;
     align-items: center;
     width: 100vw;
-    height: 150px;
+    height: 200px;
     background-color: var(--colorLeters);
     transform: translateY(0);
     transition: 0.5s;
     opacity: 1;
+    padding-bottom: 30px;
 
    }
 
@@ -90,7 +96,11 @@
     width: 100px;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
   
+   }
+   .linksContainer button:hover{
+    color: aqua;
    }
    .menu{
     display: block;

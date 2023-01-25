@@ -20,7 +20,7 @@ body {
     margin-right: 40px;
     margin-left: 20px;
     line-height: 0.2;
-    height: auto;
+ 
     
 }
 
@@ -33,6 +33,10 @@ body {
     margin-right: 50px;
     margin-left: 20px;
 
+}
+.text span{
+   
+    line-height: 1;
 }
 .presentation img{
     opacity: 0;
@@ -64,9 +68,6 @@ body {
     }
     .presentation img{
         display: none;
-    }
-    .text span{
-        height: 200px;
-        line-height: 1;
+        height: 60px;
     }
  }
