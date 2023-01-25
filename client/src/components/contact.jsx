@@ -82,13 +82,13 @@ export default function Contact() {
                 <img id="contact" className={Styles.debajo} width={350} src={contactImg} alt="" />
                 <div className={Styles.formContainer}>
                     <form>
-                        <input onChange={inputsHandler} name="name" value={input.name} placeholder="nombre" type="text" />
+                        <input onChange={inputsHandler} name="name" value={input.name} placeholder="Name" type="text" />
                         <br />
-                        <input onChange={inputsHandler} name="email" value={input.email} placeholder="email" type="email" />
+                        <input onChange={inputsHandler} name="email" value={input.email} placeholder="Email" type="email" />
                         <br />
-                        <input onChange={inputsHandler} name="phone" value={input.phone} placeholder="phone with area code" type="text" />
+                        <input onChange={inputsHandler} name="phone" value={input.phone} placeholder="Phone with area code" type="text" />
                         <br />
-                        <textarea onChange={inputsHandler} name="message" value={input.message} placeholder="mensaje" id="" cols="40" rows="4"></textarea>
+                        <textarea onChange={inputsHandler} name="message" value={input.message} placeholder="Message..." id="" cols="40" rows="4"></textarea>
                         <br />
                         <button onClick={sendMessage}></button>
                     </form>

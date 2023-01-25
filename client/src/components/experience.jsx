@@ -25,15 +25,17 @@ export default function Experience() {
 
     const el = useRef(null)
 
-    const skills = [`<span>import</span> skills <span>from</span> "./skills.js"`,`<span>skills</span>.map( (<span>skill</span>) => console.log(<span>skill</span>))`, `Mis skills... </br> ==> <span>JavaScript</span></br>==> <span>React.js</span> </br>==> <span>Node.js</span> </br>==><span> express.js </span></br>==><span> Sequelize  </span></br>==><span> postgresQl</span>  </br>==>[<span>Html, Css, less, bootstrap5, tailwind</span>]</br></br> <strong>...Siempre estoy en constante aprendizaje!! 👨‍🎓</strong>`]
+    const skills = [`<span>import</span> skills <span>from</span> "./skills.js"`,
+    `<span>skills</span>.map( (<span>skill</span>) => console.log(<span>skill</span>))`,
+     `Mis skills... </br> ==> <span>JavaScript</span></br>==> <span>React.js</span> </br>==> <span>Node.js</span> </br>==><span> express.js </span></br>==><span> Sequelize  </span></br>==><span> postgresQl</span>  </br>==>[<span>Html, Css, less, bootstrap5, tailwind</span>]</br></br> <strong>...Siempre estoy en constante aprendizaje!! 👨‍🎓</strong>`]
 
     function typear (strings){
         const typed = new Typed(el.current, {
             strings:strings.map(e=> `${e}`),
                 startDelay:300,
-                typeSpeed:40,
+                typeSpeed:10,
                 smartBackspace:false,
-                backDelay:1000,
+                backDelay:500,
                 backSpeed:1,
                 showCursor:true,
                 loop:false

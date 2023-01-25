@@ -8,15 +8,19 @@ export default function Abaut (){
     
     const el = useRef(null)
 
-    const arr = ["Me encantan los desafios, trabajar en equipo y estar en constante aprendizaje.", "En mi tiempo libre jugar video juegos, o realizar actividades al aire libre.", "Me gusta el backend ya que me encanta la logica.", "soy una persona proactiva y autodidacta por naturaleza apacionado por la tecnologia y el diseño web."]
+    const arr = ["I love challenges, teamwork and constant learning.",
+     "In my spare time I play video games with my son, or do outdoor activities.",
+      "I love the back end, although I don't dislike the front.",
+       "I am a proactive and self-taught person",
+       "I am constantly learning, and I love programming!💙"]
         function typear (strArr){
             const typed = new Typed(el.current, {
                 strings:strArr.map(e=> `<strong>${e}</strong>`),
                 startDelay:300,
-                typeSpeed:40,
+                typeSpeed:20,
                 smartBackspace:false,
                 backDelay:1000,
-                backSpeed:10,
+                backSpeed:1,
                 showCursor:true,
                 loop:false
                 
