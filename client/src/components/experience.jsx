@@ -71,7 +71,7 @@ export default function Experience() {
                 <div className={Styles.console}>
                     <div className={Styles.margen}>
                         <div>
-                            <img className={Styles.logoConsole} width={10} height={10} src={terminalImg} alt="" />
+                            <button className={Styles.terminalImg}></button>
                             <p>Simbolo del sistema</p>
                         </div>
                         <div>

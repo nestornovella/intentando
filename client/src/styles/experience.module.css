@@ -28,8 +28,14 @@
     width: 400px; 
     height: 15px;
     border: solid gray 1px;
-    background-color: rgb(179, 177, 177);
+    background-color:rgb(40, 40, 82) ;
     border-top: none;
+}
+.terminalImg{
+    background: url("../icons/terminal.webp");
+    background-position: center;
+    background-size: cover;
+    border: none;
 }
 .margen button{
     text-align: center;

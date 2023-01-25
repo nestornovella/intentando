@@ -13,13 +13,13 @@ export default function Presentation() {
     useEffect(()=>{
              new Typed(el.current, {
             strings:["Full Stack Developer",
-             "soy henry</br>(6 months)</br>of Preparation", 
-            "more than 800 hours", 
+             "soy henry</br>(6 months)👨‍🎓", 
+            "More than 800 hours", 
             "tens of </br>Proyects!!",
             "Agile methodologies",
              "Uff I need a coffee!</br>☕",
              "Api's rest",
-             "Full Stack Developer☕"],
+             "👨‍🎓Full Stack Developer☕"],
             startDelay:300,
             typeSpeed:30,
             backDelay:1000,
