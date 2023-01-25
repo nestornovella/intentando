@@ -38,12 +38,35 @@
     transform: scale(0.9);
     transition: 1.2s ease-in-out all;
 }
-.container img.izquierda{
-    transform: translateX(-100px);
-}
+
 
 .container img.visible{
     opacity: 1;
     transform: scale(1);
     transform: translateX(0px);
 } 
+
+@media (max-width: 700px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+       
+    }
+    .abaut {
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+        margin-top: 100px;
+       
+    }
+    .abaut h1 {
+        margin: 0px;
+    }
+    .container img.visible{
+        opacity: 1;
+        transform: translateX(0px);
+    } 
+ }

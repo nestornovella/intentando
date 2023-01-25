@@ -79,7 +79,7 @@ export default function Contact() {
         <div id="Contact" className={Styles.container}>
             <h1>Contact...</h1>
             <div className={Styles.contact}>
-                <img id="contact" className={Styles.debajo} width={400} src={contactImg} alt="" />
+                <img id="contact" className={Styles.debajo} width={350} src={contactImg} alt="" />
                 <div className={Styles.formContainer}>
                     <form>
                         <input onChange={inputsHandler} name="name" value={input.name} placeholder="nombre" type="text" />

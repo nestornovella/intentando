@@ -91,7 +91,7 @@ export default function Experience() {
 
                 </div>
             </div>
-            <img  id="experienseImg"  className={Styles.derecha} width={400} src={expImage} alt="" />
+            <img  id="experienseImg"  className={Styles.derecha} width={350} src={expImage} alt="" />
             <div>
             </div>
         </div>)

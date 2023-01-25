@@ -75,3 +75,27 @@
     transform: scale(1);
     transform: translateX(0px)
 }
+
+@media (max-width: 700px) {
+    html{
+        width: 100%;
+    }
+    .container{
+        margin-top: 200px;
+    }
+    .contact{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+        margin: 0px;
+       
+       
+    }
+    .contact img.visible{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+ 
+ }

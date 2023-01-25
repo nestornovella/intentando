@@ -12,7 +12,7 @@ export default function Presentation() {
 
     useEffect(()=>{
              new Typed(el.current, {
-            strings:["Full Stack Developer", "soy henry(6 meses)", "Mas de 800 hs", "Decenas de proyectos","Metodologias Agiles", "Uff necesito un cafe!☕","Api's rest","Full Stack Developer☕"],
+            strings:["Full Stack Developer", "soy henry</br>(6 meses)", "Mas de 800 hs", "Decenas de </br>proyectos","Metodologias Agiles", "Uff necesito un cafe!</br>☕","Api's rest","Full Stack Developer☕"],
             startDelay:300,
             typeSpeed:75,
             backDelay:1000,

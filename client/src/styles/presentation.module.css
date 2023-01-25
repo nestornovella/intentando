@@ -50,3 +50,23 @@ body {
     transform: translateX(0px)
 }
 
+@media (max-width: 700px) {
+ 
+    .container{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+        height: 600px;
+        margin: 0px;
+       
+    }
+    .presentation img{
+        display: none;
+    }
+    .text span{
+        height: 200px;
+        line-height: 1;
+    }
+ }

@@ -1,6 +1,7 @@
 
 html{
   scroll-behavior: smooth;
+  width: 100vw;
 
 }
 a{
@@ -14,6 +15,7 @@ a:hover{
 body {
   margin: 0px;
   padding: 0px;
+  width: 100vw;
  
 }
 body::-webkit-scrollbar {
