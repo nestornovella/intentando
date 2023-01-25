@@ -5,7 +5,7 @@ const routes = require("./src/routes/index")
 const cors = require("cors")
 
 const server = express()
-const PORT = p
+const PORT = process.env.PORT
 
 
 server.use(express.json())
