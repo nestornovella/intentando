@@ -31,7 +31,7 @@ export default function NavBar() {
             </div>
             <div className={Styles.linksContainer}>
                 <button> <a href="#Inicio">START</a></button>
-                <button><a href="#Abaut">ABAUT</a></button>
+                <button><a href="#Abaut">ABOUT</a></button>
                 <button><a href="#Skills">SKILLS</a></button>
                 <button><a href="#Contact">CONTACT</a></button>
             </div>
