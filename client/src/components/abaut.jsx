@@ -51,7 +51,7 @@ export default function Abaut (){
     return(
         <div id="Abaut" className={Styles.container}>
             <div>
-                <img className={Styles.izquierda} id="prueba" width={350} src={imgAbaut} alt="" />
+                <img width={350}  id="prueba"  src={imgAbaut} alt="" />
             </div>
             <div className={Styles.abaut}>
                 <h1 className={Styles.abaut}>About me...</h1>

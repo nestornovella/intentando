@@ -14,7 +14,6 @@ function App() {
         <Switch>
           <Route exact path={"/"}><NavBar/> <Presentation/> <Abaut/> <Experience/> <Contact/></Route>
         </Switch>
-      
       </BrowserRouter>
 
     </div>

@@ -5,10 +5,14 @@ body {
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     margin-left: 10%;
     margin-right: 10%;
     height: 100vh;
+
+}
+.image{
+
+    width: 50%;
 
 }
 
@@ -17,38 +21,37 @@ body {
     font-family: sans-serif, cursive;
     font-weight: 600;
     font-size: 30px;
-    margin-right: 40px;
-    margin-left: 20px;
     line-height: 0.2;
- 
+}
+.text{
+    width: 50%;
+
     
 }
-
 
 .name {
     color: var(--colorLeters);
     font-family: sans-serif, cursive;
     font-weight: 800;
     font-size: 30px;
-    margin-right: 50px;
-    margin-left: 20px;
+    
 
 }
 .text span{
-   
     line-height: 1;
+    text-align: center;
 }
-.presentation img{
+.image img{
     opacity: 0;
     transform: scale(0.9);
     transition: 1.2s ease-in-out all;
 }
 
-.presentation img.derecha{
+.image img.derecha{
     transform: translateX(100px);
 }
 
-.presentation img.visible{
+.image img.visible{
     opacity: 1;
     transform: scale(1);
     transform: translateX(0px)
@@ -66,8 +69,15 @@ body {
         margin: 0px;
        
     }
-    .presentation img{
+    .text{
+        width: 100%;
+    }
+    .image img{
         display: none;
         height: 60px;
+    }
+    .text img{
+       margin-top: 50px;
+    
     }
  }

@@ -1,14 +1,24 @@
 import Styles from "../styles/presentation.module.css";
 import imgPortada from "../img/portada-removebg-preview.png";
-import { useEffect,  useRef  } from "react";
+import { useEffect,  useRef } from "react";
+import { useLocation } from "react-router-dom";
 import Typed from "typed.js";
+import { visitAdd } from "../functions/apiInfo";
+import queryString from "query-string"
 
 
 
 
 export default function Presentation() {
-
+    
+  
     const el = useRef(null)
+    const {search} = useLocation()
+    const {visit} = queryString.parse(search)
+    useEffect(()=>{
+       visitAdd(visit)
+       console.log("ejecute")
+    },[visit])
 
     useEffect(()=>{
              new Typed(el.current, {
@@ -29,9 +39,13 @@ export default function Presentation() {
             loop:false
         })
     },[])
+    useEffect(()=>{
+        const presentation = Array.from(document.getElementsByTagName("h2")).filter(e => !e.className.includes("name"))
+        console.log(presentation)
+    }, [])
 
 
-    const cargarImagen = (entradas, observador) => {
+    const cargarImagen = (entradas) => {
         entradas.forEach(entrada => {
             if (entrada.isIntersecting) { entrada.target.className = Styles.visible }
             else { entrada.target.className = Styles.derecha }
@@ -54,7 +68,7 @@ export default function Presentation() {
                 <h2 className={Styles.presentation}><span ref={el}></span></h2>
                 <img width={300} src="https://pysong-dev.web.app/assets/images/others/web.gif" alt="" />
             </div>
-            <div className={Styles.presentation}>
+            <div className={Styles.image}>
                 <img width={500} id="presentation" className={Styles.derecha} src={imgPortada} alt="" />
             </div>
         </div>

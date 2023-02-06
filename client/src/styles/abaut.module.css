@@ -8,13 +8,18 @@
     align-items: center;
     margin-left: 10%;
     margin-right: 20%;
+    height: 350px;
 
   
 }
+.container :first-child{
+    width: 50%;
+}
 .abaut{
-    width: 500px;
-    height: max-content;
+    text-align: center;
+    width: 50%;
     margin-left: 20px;
+  
     
 }
 .abaut h1 {
@@ -22,8 +27,8 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     font-size: 30px;
-    margin-right: 50px;
-    margin-left: 20px;
+    margin: auto;
+   
 
 }
 
@@ -35,6 +40,7 @@
 
 .container img{
     opacity: 0;
+    width: 350px;
     transform: scale(0.9);
     transform: translateX(-100px);
     transition: 1.2s ease-in-out all;
@@ -43,6 +49,7 @@
 
 .container img.visible{
     opacity: 1;
+    width: 350px;
     transform: scale(1);
     transform: translateX(0px);
 } 
@@ -50,18 +57,19 @@
 @media (max-width: 700px) {
     .container{
         flex-direction: column;
-        width: 100%;
         justify-content: center;
         align-items: center;
         margin: 0px;
        
+    }
+    .container :first-child{
+        width: 100%;
     }
     .abaut {
         text-align: center;
         width: 100%;
         margin: 0px;
         margin-top: 100px;
-       
     }
     .abaut h1 {
         margin: 0px;

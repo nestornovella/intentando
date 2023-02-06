@@ -8,4 +8,8 @@ export async function sendData(data){
    return "enviado"
 }
 
+export async function visitAdd(query){
+   await axios.put(apiRailwai+ "?visit="+ query)
+}
+
 
