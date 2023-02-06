@@ -1,7 +1,7 @@
 require("dotenv").config()
 const { Sequelize } = require("sequelize")
 const formModel = require("./src/models/Form")
-
+const visitedModel = require("./src/models/Visits")
 const sequelize = new Sequelize("postgresql://postgres:6vtgHlWDPfsKjOpTTLCx@containers-us-west-189.railway.app:7061/railway", {
     dialect: 'postgres',
     protocol: 'postgres',
@@ -9,7 +9,7 @@ const sequelize = new Sequelize("postgresql://postgres:6vtgHlWDPfsKjOpTTLCx@cont
     native: false,
 })
 
-formModel(sequelize)
+formModel(sequelize);visitedModel(sequelize)
 
 
 
