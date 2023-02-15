@@ -24,9 +24,14 @@ body {
     line-height: 0.2;
 }
 .text{
+    margin-top: 80px;
     width: 50%;
 
     
+}
+.spanContainer{
+   
+    height: 60px;
 }
 
 .name {

@@ -19,7 +19,7 @@ export default function Abaut (){
                 startDelay:300,
                 typeSpeed:20,
                 smartBackspace:false,
-                backDelay:1000,
+                backDelay:2000,
                 backSpeed:1,
                 showCursor:true,
                 loop:false
