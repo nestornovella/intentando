@@ -17,7 +17,6 @@ export default function Presentation() {
     const { visit } = queryString.parse(search)
     useEffect(() => {
         visitAdd(visit)
-        console.log("ejecute")
     }, [visit])
 
     useEffect(() => {
