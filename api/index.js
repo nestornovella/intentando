@@ -15,4 +15,4 @@ server.use(cors())
 server.use("/", routes)
 
 
-server.listen(process.env.PORT || 3001, connect.sync({force:false}).then(() => console.info("listen in port 3001")))
+server.listen(process.env.PORT || 3001,() => console.info("listen in port 3001"))
