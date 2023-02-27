@@ -14,7 +14,6 @@ formModel(sequelize);visitedModel(sequelize)
 
 
 
-console.log(sequelize.models)
 module.exports = {
     ...sequelize.models,
     connect: sequelize

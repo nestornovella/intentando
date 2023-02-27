@@ -5,7 +5,7 @@ const routes = require("./src/routes/index")
 const cors = require("cors")
 
 const server = express()
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3001
 
 
 server.use(express.json())
@@ -15,4 +15,4 @@ server.use(cors())
 server.use("/", routes)
 
 
-server.listen(process.env.PORT || 3001, connect.sync({force:false}).then(() => console.info("listen in port 3001")))
+server.listen(PORT)
