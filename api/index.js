@@ -15,4 +15,4 @@ server.use(cors())
 server.use("/", routes)
 
 
-server.listen(PORT)
+server.listen(PORT, connect.sync({force:false}).then(console.log(`listen in port ${PORT}`)))

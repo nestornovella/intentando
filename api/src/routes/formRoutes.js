@@ -1,5 +1,5 @@
 const { Router } = require("express")
-const { getForm, postForm, deletForm, deletAllForm } = require("../controllers/form")
+const { getForm, postForm, deletForm } = require("../controllers/form")
 
 const router = Router()
 
