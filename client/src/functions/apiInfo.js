@@ -1,15 +1,15 @@
 import axios from "axios"
 
 
-const apiRailwai = "http://localhost:3001/"//"https://portfolio-production-77df.up.railway.app/"
+const apiRailway = process.env.BACKEND_URL
 
 export async function sendData(data){
-   await axios.post(apiRailwai, data)
+   await axios.post(apiRailway, data)
    return "enviado"
 }
 
 export async function visitAdd(query){
-   await axios.put(apiRailwai + "?visit="+ query)
+   await axios.put(apiRailway + "?visit="+ query)
 }
 
 
