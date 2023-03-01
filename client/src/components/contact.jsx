@@ -42,10 +42,10 @@ export default function Contact() {
 
 
     const enviado = ()=>{Swal.fire({
-        title: 'Enviado!',
-        text: 'Tu Mensaje se ha enviado. Me pondre en contacto lo Antes posible!',
+        title: 'Sent!',
+        text: 'Your message has been sent. I will contact you as soon as possible!',
         icon: 'success',
-        confirmButtonText: 'Genial!',
+        confirmButtonText: 'Great!',
         showClass: {
             popup: 'animate__animated animate__fadeInLeft'
           },

@@ -16,7 +16,12 @@ export default function Presentation() {
     const { search } = useLocation()
     const { visit } = queryString.parse(search)
     useEffect(() => {
-        visitAdd(visit)
+            if(visit !== "false") {
+            visitAdd(visit)
+            }else{
+                console.log("no se contabiliza la visita!")
+            }
+
     }, [visit])
 
     useEffect(() => {

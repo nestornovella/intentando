@@ -11,7 +11,7 @@ import 'animate.css';
 export default function Experience() {
     const ups = ()=>{Swal.fire({
         title: 'Ilustrativo!!',
-        text: 'Estos botones son sole de caracter ilustrativo!',
+        text: 'These buttons are for illustration only.',
         icon: 'error',
         confirmButtonText: 'Ups!',
         showClass: {
