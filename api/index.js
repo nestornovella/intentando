@@ -2,7 +2,7 @@ const express = require("express")
 const morgan = require("morgan")
 const { connect } = require("./db")
 const routes = require("./src/routes/index")
-const cors = require("cors")
+const corsOrigin = require("cors")
 
 const server = express()
 const PORT = process.env.PORT || 3001
@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001
 
 server.use(express.json())
 server.use(morgan('dev'))
-server.use(cors())
+server.use(corsOrigin())
 
 server.use("/", routes)
 
