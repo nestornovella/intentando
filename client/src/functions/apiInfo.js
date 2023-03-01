@@ -9,7 +9,7 @@ export async function sendData(data){
 }
 
 export async function visitAdd(query){
-   await axios.put(apiRailway + "?visit="+ query)
+   await axios.put(`${apiRailway}/visits/?visit=${query}`)
 }
 
 
