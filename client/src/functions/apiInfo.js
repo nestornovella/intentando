@@ -1,7 +1,7 @@
 import axios from "axios"
 
 
-const apiRailway = process.env.BACKEND_URL
+const apiRailway = "https://portfolio-production-bf14.up.railway.app/"
 
 export async function sendData(data){
    await axios.post(apiRailway, data)
