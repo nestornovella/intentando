@@ -1,0 +1,67 @@
+
+
+.container{
+    display: flex;
+    padding-left: 50%;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.nolinks{
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 5px;
+    transform: rotate(-50deg);
+    transition: 0.5s ease-in-out all;
+}
+
+.links{
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 5px;
+    transform: rotate(0deg);
+    transition: 2.5s ease-in-out all;
+}
+
+
+.buttonContainer :first-child button {
+    background: url("../icons/github2.png");
+    background-size: cover;
+    background-position: center;
+}
+.buttonContainer :last-child button {
+    background: url("../icons/linkedin.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.links:hover{
+   cursor: pointer;
+   border: solid black 1px;
+   animation: linksAnimation 3s linear infinite;
+}
+
+
+@keyframes linksAnimation {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(10deg);}
+    50% { transform: rotate(0deg);}
+    75% { transform: rotate(-10deg);}
+    100% { transform: rotate(0deg);}
+  }
