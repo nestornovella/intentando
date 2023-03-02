@@ -1,10 +1,12 @@
 import Styles from "../styles/contact.module.css"
 import contactImg from "../img/contact.png"
 import { useEffect } from "react"
-import Swal from 'sweetalert2'
 import 'animate.css';
 import { useState } from "react";
 import { sendData } from "../functions/apiInfo";
+import verifyErrors from "../functions/validations";
+import swetMesaje from "../functions/popopsMsj";
+import { notSend, sended } from "../functions/messajesValues";
 
 
 
@@ -17,43 +19,38 @@ export default function Contact() {
         message:""
     })
 
+    const [errors, setErrors] = useState({error:"block"})
+
     function inputsHandler (e){
         setInput({
             ...input,
             [e.target.name]:e.target.value
         })
-
+        setErrors(verifyErrors({
+            ...input,
+            [e.target.name]:e.target.value
+        }))
+  
     }
 
     async function sendMessage(e){
         e.preventDefault()
-        sendData(input).then(response =>{
-            setInput({
-                name:"",
-                email:"",
-                phone:"",
-                message:""
-            })
+        Object.keys(errors).length && setErrors({sendError:"you need to coplete the inputs first!⚠️"})
+        if(!Object.keys(errors).length){
+            sendData(input).then(response =>{
+                setInput({
+                    name:"",
+                    email:"",
+                    phone:"",
+                    message:""
+                })
+                swetMesaje(sended)
+                setErrors({error:"block"})
 
-         enviado()
-        })        
+            })        
+        }else{swetMesaje(notSend)}
             
     }
-
-
-    const enviado = ()=>{Swal.fire({
-        title: 'Sent!',
-        text: 'Your message has been sent. I will contact you as soon as possible!',
-        icon: 'success',
-        confirmButtonText: 'Great!',
-        showClass: {
-            popup: 'animate__animated animate__fadeInLeft'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__bounceOutRight'
-          }
-      })}
-
 
     const cargarImagen = (entradas, observador)=>{
         entradas.forEach(entrada => {
@@ -62,7 +59,6 @@ export default function Contact() {
         })
     }
 
-    
     useEffect(()=>{
         const observador = new IntersectionObserver(cargarImagen,{
             root:null,
@@ -70,10 +66,7 @@ export default function Contact() {
             threshold:0.2
         })
         observador.observe(document.getElementById("contact"))
-      
-    })
-
-
+    },[])
 
     return (
         <div id="Contact" className={Styles.container}>
@@ -83,14 +76,18 @@ export default function Contact() {
                 <div className={Styles.formContainer}>
                     <form>
                         <input onChange={inputsHandler} name="name" value={input.name} placeholder="Name" type="text" />
+                        {  errors.name && <br />&&<p className={Styles.errorText}>{errors.name}</p>}
                         <br />
                         <input onChange={inputsHandler} name="email" value={input.email} placeholder="Email" type="email" />
+                        {  errors.email && <br />&&<p className={Styles.errorText}>{errors.email}</p>}
                         <br />
                         <input onChange={inputsHandler} name="phone" value={input.phone} placeholder="Phone with area code" type="text" />
                         <br />
                         <textarea onChange={inputsHandler} name="message" value={input.message} placeholder="Message..." id="" cols="40" rows="4"></textarea>
+                        {  errors.message && <br />&&<p className={Styles.errorText}>{errors.message}</p>}
                         <br />
                         <button onClick={sendMessage}></button>
+                        {  Object.keys(errors).length ? <br />&&<p className={Styles.errorText}>{errors.sendError}</p>: ""}
                     </form>
                 </div>
             </div>
