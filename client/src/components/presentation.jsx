@@ -75,7 +75,7 @@ export default function Presentation() {
                 <img width={300} src={img.length ? img : "https://pysong-dev.web.app/assets/images/others/web.gif"} alt="" />
             </div>
             <div className={Styles.image}>
-                <img width={600} id="presentation" className={Styles.derecha} src={imgPortada} alt="" />
+                <img  id="presentation" className={Styles.derecha} src={imgPortada} alt="" />
             </div>
         </div>
 

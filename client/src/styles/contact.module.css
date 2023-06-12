@@ -26,7 +26,7 @@
 .contact form input{
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    width:  300px;
+    width:  31vw;
     outline: none;
     border: none;
     border-bottom: 2px solid var(--colorLeters__Grey);
@@ -36,7 +36,7 @@
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
     outline: none;
-  
+    width: 31vw;
     border: 2px solid var(--colorLeters__Grey);
  
 

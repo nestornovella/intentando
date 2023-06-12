@@ -55,8 +55,7 @@ export default function Experience() {
     return (
 
         <div id="Skills" className={Styles.container}>
-            <div>
-
+            <div className={Styles.consolaContainer}>
                 <div className={Styles.console}>
                     <div className={Styles.margen}>
                         <div>
@@ -64,26 +63,25 @@ export default function Experience() {
                             <p>Simbolo del sistema</p>
                         </div>
                         <div>
-                            <button onClick={()=>swetMesaje(ups)}>-</button>
-                            <button onClick={()=>swetMesaje(ups)}>x</button>
+                            <button onClick={() => swetMesaje(ups)}>-</button>
+                            <button onClick={() => swetMesaje(ups)}>x</button>
                         </div>
                     </div>
                     <div className={Styles.blackboard}>
                         <div className={Styles.comands}>
                             <p>{`Microsoft Windows [Versión 10.0.19044.2006]
                         (c) Microsoft Corporation. Todos los derechos reservados.`}</p>
-
                             <p>C:\Users\impor{">"} node</p>
                             <p>Welcome to Node.js v18.12.1.Type <br />".help" for more information.{">"}</p>
                             <br />
                             <p><span ref={el}></span></p>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <img id="experienseImg" className={Styles.derecha} width={350} src={expImage} alt="" />
-            <div>
+            <div className={Styles.imagenContainer}>
+                <img id="experienseImg" className={Styles.derecha} src={expImage} alt="" />
             </div>
+
         </div>)
 }

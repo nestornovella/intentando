@@ -1,9 +1,7 @@
+.container {
 
-
-.container{
-   
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,33 +9,37 @@
     margin-bottom: 15%;
 }
 
-.console{
+.console {
+    margin: auto;
     margin-top: 50px;
-  width: 400px;  
-  height: 250px;
-  border: solid grey 1px;
-  overflow: hidden;  
-  text-align: start;
-  margin-right: 100px;
+    width: 80%;
+    height: 300px;
+    border: solid grey 1px;
+    overflow: hidden;
+    text-align: start;
   
+
 }
-.margen{
+
+.margen {
     display: flex;
     justify-content: space-between;
 
-    width: 400px; 
+    width: 100%;
     height: 15px;
     border: solid gray 1px;
-    background-color:rgb(40, 40, 82) ;
+    background-color: rgb(40, 40, 82);
     border-top: none;
 }
-.terminalImg{
+
+.terminalImg {
     background: url("../icons/terminal.webp");
     background-position: center;
     background-size: cover;
     border: none;
 }
-.margen button{
+
+.margen button {
     text-align: center;
     font-size: 8px;
     width: 15px;
@@ -45,79 +47,84 @@
     margin-right: 2px;
     margin-bottom: 4px;
     padding-left: 3px;
-    
+
 }
-.margen :first-child{
+
+.margen :first-child {
     text-align: center;
     display: flex;
     justify-content: space-between;
-   
+
 }
 
-.margen :first-child p{
+.margen :first-child p {
     color: white;
-    font-size: 10px;
+    font-size: 70%;
     margin-left: 5px;
     margin-top: 3px;
 }
-.margen :first-child img{
-   margin-left: 10px;
+
+.margen :first-child img {
+    margin-left: 10px;
 }
 
-.margen :last-child{
+.margen :last-child {
     display: flex;
 
 }
 
 
-.blackboard{
+.blackboard {
     background-color: rgba(0, 0, 0, 0.822);
     height: 100%;
 
 }
 
-.blackboard :first-child p{
+.blackboard :first-child p {
     margin: 0px;
-    font-size: 10px;
+    font-size: 13px;
     font-family: monospace;
     color: white;
 }
 
-.container img{
+.container img {
     opacity: 0;
     transform: scale(0.9);
     transform: translateX(100px);
     transition: 1.2s ease-in-out all;
-    
+
 }
 
-.container img.visible{
+.container img.visible {
     opacity: 1;
     transform: scale(1);
     transform: translateX(0px);
 }
 
-.comands span{
+.comands span {
     color: yellow;
 }
-.comands span span{
+
+.comands span span {
     color: rgb(65, 212, 32);
 }
 
 @media (max-width: 700px) {
- 
-    .console{
+
+    .console {
         width: auto;
         font-size: 10px;
 
-      
-        
+
+
     }
-    .comands span{
+
+    .comands span {
         font-size: 12px;
 
     }
-    .container{
+
+    .container {
 
         flex-direction: column;
         width: 100%;
@@ -125,23 +132,25 @@
         align-items: center;
         margin: auto;
         margin-top: 150px;
-       
+
     }
-    .console{
+
+    .console {
         margin: 10%;
-        
+
     }
-    .container img{
+
+    .container img {
         opacity: 0;
         transform: scale(0.9);
         transform: translateX(0px);
         transition: 1.2s ease-in-out all;
-        
+
     }
-    
-    .container img.visible{
+
+    .container img.visible {
         opacity: 1;
         transform: translateX(0px);
     }
-    
- }
+
+}
